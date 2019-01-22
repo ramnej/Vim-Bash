@@ -1,0 +1,11 @@
+*
+!.*
+*history*
+.CFUserTextEncoding
+.emacs.d
+.DS_Store
+.profile*
+.smex*
+.wget*
+.iterm*
+.lesshst
