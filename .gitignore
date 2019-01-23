@@ -1,5 +1,6 @@
 *
 !.*
+!dependencies.txt
 *history*
 .CFUserTextEncoding
 .emacs.d
@@ -9,3 +10,4 @@
 .wget*
 .iterm*
 .lesshst
+.viminfo
