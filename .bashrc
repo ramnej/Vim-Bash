@@ -12,7 +12,7 @@ alias ich='cd /Users/johanramne/Library/Mobile\ Documents/iCloud~com~altifondo~H
 alias ic='cd /Users/johanramne/Library/Mobile\ Documents/com~apple~CloudDocs'
 
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
-export PATH=$PATH:/Users/johanramne/bin/:~/.local/bin/
+# export PATH=$PATH:/Users/johanramne/bin/:/Users/johanramne/.local/bin/:/Library/TeX/
 export WORKON_HOME=~/.venv/
 eclw () {
     nohup /Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c $@ > ~/tmp/nohup_emacs.out &
