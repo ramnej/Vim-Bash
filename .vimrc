@@ -68,7 +68,7 @@ noremap <Right> <NOP>
 
 " PEP8 Indentation
 
-au BufNewFile,Bufread *.py,*.c
+au BufNewFile,Bufread *.py,*.c,*.h,*.json
 	\ set tabstop=4 |
 	\ set softtabstop=4 |
 	\ set shiftwidth=4 |
