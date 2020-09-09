@@ -5,15 +5,11 @@ alias aws-ip='export instanceIp=`aws ec2 describe-instances --filters "Name=inst
 alias aws-ssh='ssh -i ~/.ssh/aws-key.pem ubuntu@$instanceIp'
 alias aws-stop='aws ec2 stop-instances --instance-ids $instanceId'
 alias v='vim'
-alias py='/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7'
 alias t='tmux attach -t'
 alias config='/usr/bin/git --git-dir=/Users/johanramne/.cfg/ --work-tree=/Users/johanramne'
-alias ich='cd /Users/johanramne/Library/Mobile\ Documents/iCloud~com~altifondo~HealthFit/Documents'
-alias ic='cd /Users/johanramne/Library/Mobile\ Documents/com~apple~CloudDocs'
+
+#export PATH="/Users/johanramne/anaconda3:$PATH"
 
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 # export PATH=$PATH:/Users/johanramne/bin/:/Users/johanramne/.local/bin/:/Library/TeX/
 export WORKON_HOME=~/.venv/
-eclw () {
-    nohup /Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c $@ > ~/tmp/nohup_emacs.out &
-    }

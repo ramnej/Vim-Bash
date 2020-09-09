@@ -12,6 +12,8 @@ Plugin 'gmarik/Vundle.vim'
 
 " add all plugins here
 "Plugin 'ervandew/supertab'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'lervag/vimtex'
 Bundle 'sirVer/ultisnips'
 Plugin 'honza/vim-snippets'
@@ -41,21 +43,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Disable arrow keys
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
-" reassign escape key
-"
-" Assign leader key
-:let mapleader = 'å'
-:nnoremap <leader>o o<Esc>k
-:nnoremap <leader>O O<Esc>j
-"
-" Assign localleader key
-:let maplocalleader = '-'
-:nnoremap <localleader>o o<Esc>o
+noremap + $
 " Enable folding
 
 " set foldmethod=indent
@@ -68,7 +56,7 @@ noremap <Right> <NOP>
 
 " PEP8 Indentation
 
-au BufNewFile,Bufread *.py,*.c,*.h,*.json
+au BufNewFile,Bufread *.py,*.c,*.h,*.json,*.java
 	\ set tabstop=4 |
 	\ set softtabstop=4 |
 	\ set shiftwidth=4 |
@@ -116,7 +104,7 @@ colorscheme zenburn
 set number relativenumber
 
 " enable system clipboard
-set clipboard=unnamed
+"set clipboard=unnamed
 
 " Settings for virtualenv
 let g:virtualenv_directory='~/.venvs/'
@@ -154,4 +142,5 @@ let g:UltiSnipsUsePythonVersion=3
 
 
 " Set scrolloff to control number of lines below the cursor
-:set scrolloff=5
+:set mouse=a
+:set backspace=2
